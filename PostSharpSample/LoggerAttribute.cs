@@ -10,12 +10,12 @@ namespace PostSharpSample
 
 		public override void OnEntry(MethodExecutionArgs args)
 		{
-			Console.WriteLine("OnEntry {0}", args.Exception);
+			Console.WriteLine("OnEntry {0}", args.Method.Name);
 		}
 
 		public override void OnExit(MethodExecutionArgs args)
 		{
-			Console.WriteLine("OnExit {0}", args.Exception);
+			Console.WriteLine("OnExit {0}", args.Method.Name);
 		}
 	}
 }
